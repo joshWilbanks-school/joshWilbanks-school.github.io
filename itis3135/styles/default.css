@@ -71,11 +71,14 @@ a:link, a:visited {
     border: 1px solid;
     margin: 0;
     padding: 5px;
-    box-shadow: 2px 2px 5px 1px #2600ff   
+    box-shadow: 2px 2px 5px 1px #2600ff;
+    
 
 }
 a:hover {
-    color: #2600ff;
+    color: #00b7ff;
+    border: 1px solid #ffc400;
+    box-shadow: 2px 2px 5px 1px #00b7ff;
 }
 
  
