@@ -1,0 +1,55 @@
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+header {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+body {
+    font-family: Copperplate, Papyrus, fantasy;
+    margin-right: 37px;
+    margin-left: 3px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.border {
+    width: 100px;
+    height: 150px;
+    background-color: cyan;
+    border-top: 15px solid black;
+    border-right: 10px dashed greenyellow;
+    border-left: 17px ridge lime;
+    border-bottom: 22px double orange;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+h2 {
+    align-self: flex-end;
+    margin-right: -20px;
+    text-decoration: underline;
+}
+
+ul {
+    text-align: center;
+}
+
+p {
+    max-width: 250px;
+    text-align: center;
+    font-size: xx-large;
+    background-color: red;
+    color: rgb(174, 145, 2);
+    margin-left: 230px;
+}
