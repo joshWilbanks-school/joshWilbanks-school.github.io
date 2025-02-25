@@ -58,19 +58,26 @@ nav > ul {
 }
 section {
     box-sizing: border-box;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(50, 20, 20);
     max-width: 500px;
-    padding: 10px;
+    padding: 5px 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 2px black;
     margin: 15px;
+    text-shadow: 1px 1px black;
 }
 section ul {
     text-align: left;
     list-style: circle;
+    background-color: rgb(90, 40, 40);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
 }
 section ul li {
-    padding: 3px;
+    padding: 6px;
     padding-left: 1em;
     text-indent: -1em;
 }
