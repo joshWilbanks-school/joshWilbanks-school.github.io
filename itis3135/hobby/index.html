@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <script src="scripts/load_section.js"></script>
+        <style>
+            html {
+                background-color: #8fc0a9;
+                margin: 0 auto;
+                padding: 0;
+                font-size: x-large;
+                font-family:'Georgia';
+                min-height: 100%;
+            }
+            body {
+                padding: 0;
+                margin: 0 auto;
+                background-color:rgba(0, 0, 0, 0.171);
+                height: 100%;
+            }
+
+            button {
+                background-color: inherit;
+                color: inherit;
+                border: none;
+                padding: 15px;
+                width: 16.66666666%;
+                min-width: 75px;
+                transition: 0.2s ease;
+                cursor: pointer;
+                border-right: 1px solid rgba(0, 0, 0, 0.39);
+                text-shadow: 1px 1px 2px black;
+                background-color: #68b0ab;
+                filter: brightness(100%);
+                box-sizing: border-box;
+            }
+            button:hover {
+                filter: brightness(120%);
+            }
+            main {
+                
+                background-color: #8fc0a9;
+                max-width: 1200px;
+                margin: 0 auto;
+                border-left: 1px solid rgba(0, 0, 0, 0.39);
+                border-right: 1px solid rgba(0, 0, 0, 0.39);
+                box-sizing: border-box;
+            }
+            header, footer {
+                color: #faf3dd;
+                text-shadow: 0px 0px 2px black;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            footer a {
+                padding: 15px;
+            }
+            footer p {
+                margin: 0 auto;
+                max-width: 1200px;
+                border-left: 1px solid rgba(0, 0, 0, 0.39);
+                border-right: 1px solid rgba(0, 0, 0, 0.39);
+                box-sizing: border-box;
+                font-size: small;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+            nav {
+                display: flex;
+                justify-content: space-evenly;
+                text-align: center;
+                max-width: 1200px;
+                margin: 0 auto;
+                border-left: 1px solid rgba(0, 0, 0, 0.39);
+                border-right: 1px solid rgba(0, 0, 0, 0.39);
+                box-sizing: border-box;
+                flex-wrap: wrap;
+            }
+            .nav-wrapper {
+                background-color: #68b0ab;
+            }
+            section {
+                display: none;
+                padding: 10%;
+                flex-direction: column;
+                align-items: center;
+            }
+            img {
+                max-width: 800px;
+                min-width: 200px;
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+            h2 {
+                text-align: center;
+            }
+
+            h1 {
+                text-align: center;
+                margin: 0;
+                padding: 15px;
+                background-color: #4a7c59;
+            }
+            p {
+                max-width: 800px;
+                min-width: 200px;
+                width: 100%;
+            }
+
+            a {
+                text-decoration: none;
+                color: #faf3dd;
+                text-shadow: 2px 2px 2px black;
+                cursor: pointer;
+            }
+
+            a:any-link:hover {
+                color: #68b0ab;
+
+            }
+
+            a:visited {
+                color: #faf3dd;
+            }
+
+            figcaption {
+                font-size:smaller;
+                text-align: center;
+                font-style: italic;
+            }
+            @media screen and (max-width: 500px) {
+                
+
+                button {
+                    
+                    border: none;
+                    width: auto;
+                }
+
+                html {
+                    font-size: large;
+                }
+
+                
+            }
+        </style>
+        <title>Pickleball</title>
+    </head>
+    <body>
+        <header>
+            <h1>All About Pickleball</h1>
+            <div class="nav-wrapper">
+                <nav>
+                    <button onclick="loadSection('what')" class="border-left">Home</button>
+                    <button onclick="loadSection('who')">About Me</button>
+                    <button onclick="loadSection('where')">Where</button>
+                    <button onclick="loadSection('when')">When</button>
+                    <button onclick="loadSection('why')">Why</button>
+                    <button onclick="loadSection('how')" style="border: none;">How</button>
+
+                </nav>
+            </div>
+
+        </header>
+        <main>
+            <section id="who" class="dynamic-section">
+                <h2>About me</h2>
+                <figure>
+                    <img src="images/me.jpg" alt="A picture of me">
+                    <figcaption>A picture of me</figcaption>
+                </figure>
+                <p>
+                    My name is Joshua Wilbanks. I have been playing pickleball for over a year and a half now.
+                    It is my favorite outside activity and I have been getting all of my friends into it!
+                    There is nothing better than some time in the sun.
+                </p>
+
+            </section>
+            <section id="what" class="dynamic-section">
+                <h2>Home</h2>
+                <figure>                    
+                    <img src="images/family-playing-pickleball.jpg" alt="A family playing pickleball">
+                    <figcaption>A family playing pickleball</figcaption>
+                </figure>
+                <p>
+                    Pickleball is a racket sport that is similar in premise to tennis.
+                    With smaller courts and more rounds, it is easier to get into, whilst still maintaining a high skill ceiling.
+                    People of all ages love to play the game, and can excel at it!
+                </p>
+            </section>
+            <section id="where" class="dynamic-section">
+                <h2>Where can you play?</h2>
+                <figure>                    
+                    <img src="images/pickleball_park.jpg" alt="An outside pickleball court">
+                    <figcaption>An outside court</figcaption>
+                </figure>
+                <p>
+                    Anywhere you find a park you will probably find a pickleball court!
+                    With pickleball being the <strong>fastest</strong> growing sport in the nation,
+                    and being vary similar to tennis, new courts are popping up all over.
+
+                </p>
+                <figure>                    
+                    <img src="images/inside.jpg" alt="An inside pickleball court">
+                    <figcaption>An inside court</figcaption>
+                </figure>
+                <p>
+                    On rainy or cold days, you can often find inside courts as well!
+                </p>
+            </section>
+            <section id="when" class="dynamic-section">
+                <h2>When can you play?</h2>
+                <figure>                    
+                    <img src="images/4_seasons.webp" alt="A picture of the 4 seasons">
+                    <figcaption>The 4 seasons</figcaption>
+                </figure>
+                <p>
+                    Pickleball is a fun sport to play any time of the year.
+                    Too cold to be outside?
+                    Try an <a onclick="loadSection('where')">indoor</a> court!
+                    To hot for the summer? Many courts stay open late!
+                </p>
+                <figure>
+                    <img src="images/night.jpg" alt="A night time pickleball court">
+                    <figcaption>A night time pickleball court</figcaption>
+                </figure>
+            </section>
+            <section id="why" class="dynamic-section">
+                <h2>Why should you play?</h2>
+                <figure>
+                    
+                    <img src="images/pretty_court.jpg" alt="A beautiful pickleball court">
+                    <figcaption>A beautiful pickleball court</figcaption>
+                </figure>
+                <p>
+                    Honestly, why not? Most of the courts are free,
+                    so the equipment needed is
+                    <a  target="_blank" href="https://www.amazon.com/VUFOXT-Pickleball-Graphite-Honeycomb-Lightweight/dp/B098J4R2CS?crid=22KY7XOGOV84Q&dib=eyJ2IjoiMSJ9.XiaztU7Ql_WclJQoxI5UmYegnB-UXml9_mNOvQWGpdkvX1Uty0_YP_-21tM81obZclrvT5_MHaElWBpGfaPknefpMCXKGoZxkH7ngz7_TyaN4FMSNsFJo_-d_3s6g8N46Jzv-_6ecJNRNsxuOkbv4vQXt7U0w3LerFUikJ4W_BH3XDdp-mXN-eLpoIPkrI9KRgHtQD7UsMo7tA-hBK2ybj-yplHG8bCUoGgEupJK5wJXMuQtTg3qLXt9iNGOG3KZcFl8MytZ0mITXmTTuXddyNm6_kLZGSON8M5LN_61tIEIEz_wgTg4Oa1KhtypBrU1ie30denYdyY3clfUGoLJcOVynAXHMAfmA4684F7VY6vzh_PGhWFTCwHGnycOTRdjebphnKgZahhePiQmVcEzxhA1emKy0vjAirZW96RlOwOmnhTiyQ8Pdrj6sntkSTvF.4zMhtFTjS-1lxfCi-xYET5Fzl1ohKRG0jG5TgL7Gqyg&dib_tag=se&keywords=pickleball%2Bstarter%2Bset&qid=1741906899&sprefix=pickleball%2Bstart%2Caps%2C106&sr=8-26&th=1">
+                    relatively cheap.</a>
+                    It is easy to pick up and only as intense as you want it to be,
+                    which is a nice advantage over tennis.
+                    With quick games you can stay for a while or only 20 minutes.
+                    Give it a try!
+                </p>
+            </section>
+            <section id="how" class="dynamic-section">
+                <h2>How do you play?</h2>
+                <figure>
+                    
+                    <img src="images/how_its_done.webp" alt="The pickleball court in detail">
+                    <figcaption>The pickleball court in detail</figcaption>
+                </figure>
+                <p>
+                    I will not go into extended detail on 
+                    <a target="_blank" href="https://usapickleball.org/what-is-pickleball/official-rules/rules-summary/">all of the rules</a> here.
+                    In its simplest form, all you need to do to play is hit the ball over the net.
+                    If you hit the ball out of the court, or the ball bounces twice on your side,
+                    the other team gets a point. However, <em>only the team serving can score</em>,
+                    just like in volleyball.
+                </p>
+                <figure>
+                    
+                    <img src="images/serve.jpg" alt="A picture showing how to serve">
+                    <figcaption>How to serve</figcaption>
+                </figure>
+                <p>
+                    To serve, just hit the ball from <em>outside of your box</em>
+                    to the box that is <strong>diagonal</strong> to you (depicted above).
+                    Remember, <strong>underhand</strong> hits only on the serve.                    
+                </p>
+                <figure>
+                    <img src="images/pickleball-court-the-kitchen.jpg" alt="The pickleball kitchen">
+                    <figcaption>The kitchen</figcaption>
+                </figure>
+                <p>
+                    Last but not least, if you are standing in the kitchen, you <em>cannot</em> hit the ball out of the air.
+                    The ball must <strong>bounce at least once</strong> before you can hit it.
+                </p>
+            </section>
+
+        </main>
+        <footer>
+            <div class="nav-wrapper">
+                <nav>
+                    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fjwilban3%2Fitis3135%2Fhobby%2Findex.html">HTML Validation</a>
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fjwilban3%2Fitis3135%2Fhobby%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">CSS Validation</a>
+                </nav>
+                <p>Page built by: <a style="padding: 0;" href="joshwilbanks.dev">Josh Wilbanks Development Services ©2025</a></p>	
+            </div>
+        </footer>
+    </body>
+</html>
