@@ -176,3 +176,23 @@ img {
     color: #fdfd93;
 
 }
+
+table {
+    background-color: rgb(61, 61, 61);
+    text-align: left;
+    border-collapse: collapse;
+    margin: 15px;
+}
+
+td, th {
+    border: 1px solid #a5a5a5;
+    padding: 10px;
+}
+.complex-table .head th {
+    
+    background-color: rgb(39, 39, 39);
+}
+.complex-table tr:nth-child(odd) {
+    background-color: rgb(99, 99, 99);
+}
+

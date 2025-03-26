@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joshua Wilbanks - ITIS3135 - HTML Tables</title>
+        <link rel="stylesheet" href="styles/default.css" >
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>HTML Tables</h2>
+            <h3>My Tabular Data</h3>
+            <ol style="text-align: left;">
+                <li style="padding-left: 15px;">Jane Smith, jsmith@gmail.com, 55,000</li>
+                <li style="padding-left: 15px;">John Doe, johnnyd@yahoo.com, 87,000</li>
+                <li style="padding-left: 15px;">Jimmy Johnson, jimjohn@uncc.edu, 98,000</li>
+                <li style="padding-left: 15px;">Judith Polgar, polgot3@gmail.com, 123,000</li>
+                <li style="padding-left: 15px;">Juniper Janslo, jdjans@uncc.edu, 88,000</li>
+                <li style="padding-left: 15px;">Julia Pho, juliapho@gmail.com, 67,000</li>
+                <li style="padding-left: 15px;">Justin Jaxon, mrmoney@yahoo.com, 250,000</li>
+            </ol>
+            <h3>Employee Data in Simple Table</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>jsmith@gmail.com</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>johnnyd@yahoo.com</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Jimmy Johnson</td>
+                    <td>jimjohn@uncc.edu</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Judith Polgar</td>
+                    <td>polgot3@gmail.com</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Juniper Janslo</td>
+                    <td>jdjans@uncc.edu</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Julia Pho</td>
+                    <td>juliapho@gmail.com</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Justin Jaxon</td>
+                    <td>mrmoney@yahoo.com</td>
+                    <td>8</td>
+                </tr>
+            </table>
+            <h3>Employee Data in Complex Table</h3>
+            <figure>
+                <figcaption>Employee Information</figcaption>
+                <table class="complex-table">
+                    <tr class="head">
+                        <th>Category</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                        <th>Salary</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">Developer</td>
+                        <td>Jane Smith</td>
+                        <td>jsmith@gmail.com</td>
+                        <td>1</td>
+                        <td>55,000</td>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>johnnyd@yahoo.com</td>
+                        <td>2</td>
+                        <td>87,000</td>
+                    </tr>
+                    <tr>
+                        <td>Jimmy Johnson</td>
+                        <td>jimjohn@uncc.edu</td>
+                        <td>3</td>
+                        <td>98,000</td>
+                    </tr>
+                    <tr>
+                        <td>Judith Polgar</td>
+                        <td>polgot3@gmail.com</td>
+                        <td>5</td>
+                        <td>123,000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Manager</td>
+                        <td>Juniper Janslo</td>
+                        <td>jdjans@uncc.edu</td>
+                        <td>2</td>
+                        <td>88,000</td>
+                    </tr>
+                    <tr>
+                        <td>Julia Pho</td>
+                        <td>juliapho@gmail.com</td>
+                        <td>1</td>
+                        <td>67,000</td>
+                    </tr>
+                    <tr>
+                        <td>Founder</td>
+                        <td>Justin Jaxon</td>
+                        <td>mrmoney@yahoo.com</td>
+                        <td>8</td>
+                        <td>250,000</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Total Years of Service</th>
+                        <td>22</td>
+                        <td>768,000</td>
+                    </tr>
+                </table>
+            </figure>
+        </main>
+		<footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+        
+</html>
+
