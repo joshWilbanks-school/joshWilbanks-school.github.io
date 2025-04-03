@@ -1,0 +1,33 @@
+
+form {
+    text-align: left;
+}
+
+form li {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 5px;
+    align-items: start;
+}
+
+
+form input {
+    margin-left: 15px;
+    flex-grow: 1;
+}
+
+form li > button {
+    background-color: rgb(3, 255, 3);
+    border: none;
+    border-radius: 5px;
+    margin-left: 15px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+form table {
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+}
