@@ -20,44 +20,46 @@
                     <ul>  
                         <li>
                             <label for="name">Name: </label>
-                            <input type="text" />
+                            <input id="name" type="text" />
                         </li>
                         <li>
                             <label for="mascot">Mascot: </label>
-                            <input type="text" />
+                            <input id="mascot" type="text" />
                         </li>
                         <li>
                             <label for="image">Image: </label>
-                            <input type="file" />
+                            <input id="image" type="file" onchange="onFileSelected(event)"/>
                         </li>
                         <li>
-                            <label for="caption">Image Caption: </label>
-                            <input type="text" />
+                            <label id="caption-label" for="caption">Image Caption: </label>
+                            <input id="caption" type="text" />
                         </li>
                         <li>
-                            <label for="personal-background">Personal Background: </label>
-                            <input type="text" />
+                            <label id="personal-background-label" for="personal-background">Personal Background: </label>
+                            <input id="personal-background" type="text" />
                         </li>
                         <li>
-                            <label for="professional-background">Professional Background: </label>
-                            <input type="text" />
+                            <label id="professional-background-label" for="professional-background">Professional Background: </label>
+                            <input id="professional-background" type="text" />
                         </li>
                         <li>
-                            <label for="academic-background">Academic Background: </label>
-                            <input type="text" />
+                            <label id="academic-background-label" for="academic-background">Academic Background: </label>
+                            <input id="academic-background" type="text" />
                         </li>
                         <li>
-                            <label for="web-dev-background">Web Development Background: </label>
-                            <input type="text" />
+                            <label id="web-dev-background-label" for="web-dev-background">Web Development Background: </label>
+                            <input id="web-dev-background" type="text" />
                         </li>
                         <li>
-                            <label for="primary-computer-platform">Primary Computer Platform: </label>
-                            <input type="text" />
+                            <label id="primary-computer-platform-label" for="primary-computer-platform">Primary Computer Platform: </label>
+                            <input id="primary-computer-platform" type="text" />
                         </li>
-                        <li>
-                            <label for="courses">Courses:</label>
-                            <button type='button' onclick="addNewCourse()">Add New Course</button>
-                            <table id="course-table">
+                        <li style="flex-direction: column;">
+                            <div style="margin-bottom: 5px;">
+                                <label for="courses">Courses:</label>
+                                <button type='button' onclick="addNewCourse()">Add New Course</button>
+                            </div>
+                            <table id="courses">
                                 <tr>
                                     <th>Course Title</th>
                                     <th>Course Description</th>
@@ -66,23 +68,58 @@
                             </table>
                         </li>
                         <li>
-                            <label for="funny-thing">Funny Thing: </label>
-                            <input type="text" />
+                            <label id="funny-thing-label" for="funny-thing">Funny Thing: </label>
+                            <input id="funny-thing" type="text" />
                         </li>
                         <li>
-                            <label for="anything-else">Anything Else: </label>
-                            <input type="text" />
+                            <label id="anything-else-label" for="anything-else">Anything Else: </label>
+                            <input id="anything-else" type="text" />
                         </li>
-                        <li>
-                            <label for="consent">"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
-                            <input type="checkbox" />
+                        <li class="consent-li">
+                            <input id="checkbox" type="checkbox" />
+                            <label id="checkbox-label" for="checkbox">"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
                         </li>
                         
                     </ul>
 
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit" class="green-button">
+                    <input type="reset" value="Reset" class="red-button">
                 </form>
+            </div>
+            <div id="page-wrapper" style="display: none;">
+                <h3 id="page-name" style="text-align: center;"> </h3>
+                <figure>
+                    <img id="page-img"/>
+                    <figcaption id="figcaption"></figcaption> 
+                </figure>
+                <ul>
+                    <li id="personal">
+                    </li>
+                    <li id="professional">
+                    </li>
+                    <li id="academic">
+                    </li>
+                    <li id="web-dev">
+                    </li>
+                    
+                    <li id="pcp">
+                    </li>
+                    
+                    <li id="page-courses">
+                        
+                    </li>
+                    
+                    <li id="funny">
+                    </li>
+                    
+                    <li id="anything">
+                    </li>
+                    
+                    <li id="page-consent">
+
+                    </li>
+                </ul>
+
             </div>
         </main>
 		<footer>

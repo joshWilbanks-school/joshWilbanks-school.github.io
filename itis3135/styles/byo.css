@@ -1,14 +1,23 @@
 
 form {
     text-align: left;
+    padding: 0px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
 form li {
     display: flex;
     flex-direction: row;
     width: 100%;
+    padding: 0px;
+    margin: 0;
     padding-top: 5px;
     align-items: start;
+}
+
+form ul {
+    padding: 0;
 }
 
 
@@ -17,7 +26,7 @@ form input {
     flex-grow: 1;
 }
 
-form li > button {
+.green-button, .red-button, main button {
     background-color: rgb(3, 255, 3);
     border: none;
     border-radius: 5px;
@@ -29,5 +38,73 @@ form li > button {
 form table {
     padding: 0;
     margin: 0;
-    margin-left: 15px;
+    width: 100%;
+}
+
+form th {
+    text-align: center;
+}
+
+form td {
+    margin: 0;
+    padding-bottom: -5px;
+    padding: 0px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 0px;
+}
+
+form td textarea {
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    color: inherit;
+    font-size: Large;
+    background: transparent;
+}
+
+form td textarea:focus {
+    outline: none;
+}
+.red-button {
+    background-color: red;
+    margin: 5px;
+}
+
+.consent-li {
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.consent-li label {
+    padding: 5px;
+    border: 1px solid #a5a5a5;
+    background-color: rgb(61, 61, 61);
+}
+
+.consent-li input {
+    margin: 10px;
+    scale: 150%;
+    accent-color:rgb(3,255,3);
+}
+
+
+
+
+#page-wrapper li {
+    text-align: left;
+    font-size: large;
+    margin: 5px;
+}
+
+main strong {
+    color: #fdfd93;
+
 }
