@@ -13,15 +13,10 @@ let courses = [];
 
 let form;
 
-document.addEventListener('DOMContentLoaded', () =>{
-
-    form = document.getElementById('form');
-    form.addEventListener('submit', submit);
-})
 
 
-
-function reset() {
+function reset()
+{
     document.getElementById('form').reset();
     courses = [];
     courseIteration = 0;
@@ -31,7 +26,8 @@ function reset() {
 }
 
 
-function addNewCourse() {
+function addNewCourse()
+{
 
     let tr = document.createElement('tr');
     tr.setAttribute('id', courseIteration.toString());
@@ -74,7 +70,8 @@ function addNewCourse() {
     courseIteration++;
 }
 
-function deleteCourse(trId) {
+function deleteCourse(trId)
+{
 
     courses[trId] = null;
 
@@ -84,7 +81,8 @@ function deleteCourse(trId) {
     
 }
 
-function getFormData() {
+function getFormData()
+{
     
     let formData = new FormData(form);
     console.log(formData.getAll());
@@ -106,8 +104,9 @@ function setTextValue(pageId, formId)
     + document.getElementById(formId).value;
 }
 
-function submit(event) {
-    event.preventDefault()
+function submit(event)
+{
+    event.preventDefault();
 
 
 
@@ -117,12 +116,12 @@ function submit(event) {
     'web-dev-background', 'primary-computer-platform', 'courses',
     'funny-thing', 'anything-else', 'checkbox'];
 
-    for(let i = 0 ; i < liNames.length; i++)
+    for (let i = 0 ; i < liNames.length; i++)
     {
         let liName = liNames[i];
         let input = document.getElementById(liName);
         console.log(input);
-        if(input.value == '')
+        if (input.value === '')
         {
             alert('Please fill out the field for \'' + liName + '\'');
             return;
@@ -130,7 +129,7 @@ function submit(event) {
         
     }
 
-    if(!document.getElementById('checkbox').checked)
+    if (!document.getElementById('checkbox').checked)
     {
         alert('Please agree to the consent at the bottom by clicking the checkbox');
         return;
@@ -160,10 +159,13 @@ function submit(event) {
     let ul = document.createElement('ul');
     document.getElementById('page-courses').appendChild(ul);
 
-    for(let i = 0; i < courses.length; i++)
+    for (let i = 0; i < courses.length; i++)
     {
-        if(courses[i] == null)
+        if (courses[i] == null)
+        {
+
             continue;
+        }
 
         let li = document.createElement('li');
 
@@ -178,16 +180,25 @@ function submit(event) {
 }
 
 
-function onFileSelected(event) {
-    var selectedFile = event.target.files[0];
-    var reader = new FileReader();
+function onFileSelected(event)
+{
+        var selectedFile = event.target.files[0];
+        var reader = new FileReader();
+    
+        var imgtag = document.getElementById("page-img");
+        imgtag.title = selectedFile.name;
+    
+        reader.onload = function(event) {
+        imgtag.src = event.target.result;
+        };
+    
+        reader.readAsDataURL(selectedFile);
+    }
+
+
   
-    var imgtag = document.getElementById("page-img");
-    imgtag.title = selectedFile.name;
-  
-    reader.onload = function(event) {
-      imgtag.src = event.target.result;
-    };
-  
-    reader.readAsDataURL(selectedFile);
-  }
+    document.addEventListener('DOMContentLoaded', () => {
+
+        form = document.getElementById('form');
+        form.addEventListener('submit', submit);
+    });
