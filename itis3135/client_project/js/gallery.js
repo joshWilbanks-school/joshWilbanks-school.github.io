@@ -5,7 +5,7 @@ function loadAllImages()
     let images = [];
     for (let i = 1; i <= imageCount; i++)
     {
-        images[i] = 'images/gallery/ (' + i + ').jpeg';
+        images[i] = 'images/gallery/' + i + '.jpeg';
     }
     return images;
 }
