@@ -1,0 +1,49 @@
+
+
+figure {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img {
+    width: 50%;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+
+.home-text-wrapper {
+    margin-top: 20px;
+    background-color: var(--lighter);
+    display: flex;
+    max-width: 800px;
+
+}
+
+.right {
+    justify-self: flex-end;
+}
+
+.home-text-wrapper img {
+    width: 200px;
+}
+
+p {
+    margin: 0;
+    font-size: x-large;
+    padding: 15px;
+    align-self: center;
+}
+
+.home-review p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: x-large;
+    font-family: cursive;
+}

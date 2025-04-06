@@ -25,6 +25,13 @@ main ul {
     }
 }
 
+@media screen and (min-width: 1400px) {
+    main ul {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 main li {
     list-style: none;
     margin: 0 auto;
@@ -33,7 +40,7 @@ main li {
 }
 
 
-img {
+main img {
     width: 100%;
     min-width: 300px;
     max-width: 500px;
