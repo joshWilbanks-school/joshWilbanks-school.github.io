@@ -2,6 +2,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/default.css" />
+        <link rel="stylesheet" href="css/reviews.css" />
+        <script src="js/reviews.js" ></script>
 
     </head>
     <body>
@@ -17,6 +19,30 @@
 
         </header>
         <main>
+            <ul id="reviews"></ul>
+            <template id="review-template">
+            
+                <li class="lighter">
+                    <div class="review-header">
+                        <h3 id="user-name">Victoria M.</h3>
+                        <div class="stars-divider">
+                            <h4 class="rating">(5.0)</h4>
+                            <img id="star-1" src="images/star.png" />
+                            <img id="star-2" src="images/star.png" />
+                            <img id="star-3" src="images/star.png" />
+                            <img id="star-4" src="images/star.png" />
+                            <img id="star-5" src="images/star.png" />
+                        </div>
+                    </div>
+                    <p id="review-text">
+                        Kade did my hair and I could NOT be happier!!!
+                        I came to them with a lot of mixed up ideas, a messy head of half dyed hair from months of not having it done, and my hair is one of the most beautiful cuts and colors I have seen out of it.
+                        The atmosphere of the salon is very chill, open, and calm.
+                        All the stylists are so sweet and helpful and are all gonna do amazing work!!
+                    </p>
+                </li>
+            
+            </template>
         </main>
         <footer>
 

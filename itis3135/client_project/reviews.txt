@@ -1,0 +1,24 @@
+
+
+[
+  {
+    "stars": 5,
+    "name": "Stimpy",
+    "text": "This was a really terrific first-time experience at Spacehead Salon!  I have systemic lupus, which translates to having a few weird health-related pre-requisites and precautions, plus -- I am not exactly rolling in money. 🙄 My stylist at another salon left for a different state during the pandemic, and I had been looking for a suitable replacement ever since.\n\nWith all this in mind, I researched for salons with an environmental focus -- yes, I'm an eco-freako, as everyone honestly SHOULD be -- but I have also found these salons to be far more tolerable, as strong chemical scents are a lupus trigger for me.  Spacehead Salon was one of the few salons around with such a finely-tuned mission to protect the environment and minimize salon waste.  Plus, as I am a Star Wars nerd and a Deadhead, Spacehead just seemed like the next logical step! Great introduction, and I hadn't even stepped into the salon yet.\n\nSince cost was also a priority, I chose padawan stylist (stylist in-training, for all you unfortunates in the dark on this one) Kade, who was available for an amazing price.  I had written a few words about my disease in my booking info, and what I ultimately found through the course of my appointment was that Kade listened, accommodated, and did everything in her power to make me feel very welcome and comfortable.\n\nWhenever Kade needed some help navigating her way through my asteroid field of shaggy hair, her salon owner and Master Stylist Shay was right by her side to either show her the path, or grab the wheel...*ahem* I mean scissors, and guide her to safety.  Fellow stylist and salon Manager Alison also offered Kade friendly assistance when making my shampoo choice, and salon Coordinator Jay was polite, friendly, and accommodating.\n\nKade's scalp massage during my shampoo was sheer heavenly!  I would go back every day for that alone, if I could.  As amazing as that was, the haircut, the overall experience, and the cost also ALL exceeded my expectations!  Plus, what other hair salon has a blow-up cow riding inside a blow-up...rocketship?!  I mean, come on! 🙄😂\n\nI will definitely be back to this hair galaxy that's not so far, far away, and will gladly dedicate my hair to the completion of Kade's training. The Force is strong with this one.  😉"
+  },
+  {
+    "stars": 5,
+    "name": "Janice Sparks",
+    "text": "I had a wonderful experience at Spacehead.  Everyone was very friendly and professional, the salon space has a great vibe, and the massaging shampoo chairs are the best!  I love the new color  Kade gave me and the facial from Cameron left my skin glowing.  Definitely recommend."
+  },
+  {
+    "stars": 5,
+    "name": "Vittoria M.",
+    "text": "Kade did my hair and I could NOT be happier!!! I came to them with a lot of mixed up ideas, a messy head of half dyed hair from months of not having it done, and my hair is one of the most beautiful cuts and colors I have seen out of it.\nThe atmosphere of the salon is very chill, open, and calm. All the stylists are so sweet and helpful and are all gonna do amazing work!!"
+  },
+  {
+    "stars": 5,
+    "name": "Morgan Woody",
+    "text": "Kade is the best! She always gets my bangs exactly how I like them"
+  },
+]
