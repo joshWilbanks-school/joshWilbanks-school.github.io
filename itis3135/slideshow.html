@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joshua Wilbanks - ITIS3135 - Slideshow</title>
+        <link rel="stylesheet" href="styles/default.css" >
+        <link rel="stylesheet" href="styles/slideshow.css" >
+        <script src="scripts/slideshow.js" ></script>
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>Slideshow</h2>
+            <div class="slideshow-holder">
+                <div class="slideshow">
+                    <button class="left" style="left: 0" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="right" style="right: 0"  onclick="changeSlide(1)">&#10095;</button>
+                    <img id="slideshow-main-img" src="images/slideshow/j.jpg" alt="main-img"/>
+                </div>
+                <div class="slideshow-text">
+                    <p id="slideshow-text">J - Jelly</p>
+                </div>
+                <div class="selector">
+                    <img id="slideshow-img-0" src="images/slideshow/j.jpg" alt="j" onclick="jumpToSlide('j')" style="opacity: 1;"/>
+                    <img id="slideshow-img-1" src="images/slideshow/o.jpg" alt="o" onclick="jumpToSlide('o')"/>
+                    <img id="slideshow-img-2" src="images/slideshow/s.jpg" alt="s" onclick="jumpToSlide('s')"/>
+                    <img id="slideshow-img-3" src="images/slideshow/h.jpg" alt="h" onclick="jumpToSlide('h')"/>
+                    <img id="slideshow-img-4" src="images/slideshow/u.jpg" alt="u" onclick="jumpToSlide('u')"/>
+                    <img id="slideshow-img-5" src="images/slideshow/a.jpg" alt="a" onclick="jumpToSlide('a')"/>
+                    <img id="slideshow-img-6" src="images/slideshow/w.jpg" alt="w" onclick="jumpToSlide('w')"/>
+                    <img id="slideshow-img-7" src="images/slideshow/i.jpg" alt="i" onclick="jumpToSlide('i')"/>
+                    <img id="slideshow-img-8" src="images/slideshow/l.jpg" alt="l" onclick="jumpToSlide('l')"/>
+                    <img id="slideshow-img-9" src="images/slideshow/b.jpg" alt="b" onclick="jumpToSlide('b')"/>
+                    <img id="slideshow-img-10" src="images/slideshow/a2.jpg" alt="a2" onclick="jumpToSlide('a2')"/>
+                    <img id="slideshow-img-11" src="images/slideshow/n.jpg" alt="n" onclick="jumpToSlide('n')"/>
+                    <img id="slideshow-img-12" src="images/slideshow/k.jpg" alt="k" onclick="jumpToSlide('k')"/>
+                    <img id="slideshow-img-13" src="images/slideshow/s2.jpg" alt="s2" onclick="jumpToSlide('s2')"/>
+
+                </div>
+            </div>
+            <h3>Notes</h3>
+            <div class="notes-wrapper">
+                <p>My beautiful girlfriend Kade was my only help on this project.</p>
+                <p>Nothing was really challenging.</p>
+                <br />
+                <p>This is indeed my work and I did not copy or paste anything.</p>
+                <p>Signed,</p>
+                <p><em>Joshua Wilbanks</em></p>
+            </div>
+        </main>
+		<footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+        
+</html>
+
