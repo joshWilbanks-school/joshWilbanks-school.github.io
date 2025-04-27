@@ -120,7 +120,7 @@ footer ul {
     justify-content: space-evenly;
     justify-self: center;
     margin: 0;
-    margin-bottom: 10px;
+    padding: 0;
 }
 
 footer li {
@@ -134,10 +134,12 @@ footer img {
 }
 
 #built-by {
+    display: block;
     text-align: center;
     width: fit-content;
     margin: 0 auto;
-    margin-bottom: 5px;
     padding: 5px;
     font-size: small;
+    color: #000000;
+    text-align: center;
 }
