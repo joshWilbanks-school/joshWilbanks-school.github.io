@@ -132,3 +132,12 @@ footer img {
     width: 40px;
 
 }
+
+#built-by {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: small;
+}
