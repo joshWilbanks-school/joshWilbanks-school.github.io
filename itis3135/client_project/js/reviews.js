@@ -1,4 +1,17 @@
 
+const reviewFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSePflOd1TpkTHmNjzV2Qt4WJSr-ljUUUqO2mIbg_YOEVLUfgg/formResponse?";
+const reviewFormNameKey = "entry.1044291087";
+const reviewFormRatingKey = "entry.1766671734";
+const reviewFormReviewKey = "entry.793391861";
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        postReviewToGoogleForm();
+    });
+
+})
+
 async function loadAllReviews()
 {
     return fetch('reviews.txt')
@@ -15,6 +28,63 @@ async function loadAllReviews()
         console.error(reason);
     });
     
+}
+
+let formVisible = false;
+
+function togglePostReview() {
+
+    let form = document.getElementById("form");
+    let toggleBtn = document.getElementById("review-toggle")
+    if(!formVisible)
+    {
+        formVisible = !formVisible;
+        form.style.display = 'block';
+        toggleBtn.style.boxShadow = '0 0 5px 0 rgb(255, 255, 255)'
+        return;
+    }
+    
+    formVisible = !formVisible;
+    form.style.display = 'none';
+    toggleBtn.style.boxShadow = '0 0 5px 0 rgba(0, 0, 0, 0.574)';
+
+
+}
+
+function postReviewToGoogleForm() {
+    let name = document.getElementById("form-name");
+    let rating = document.getElementById("form-rating");
+    let body = document.getElementById("form-body");
+
+    let url = reviewFormUrl + reviewFormNameKey + "=" + name.value;
+    url += "&" + reviewFormRatingKey + "=" + rating.value;
+    url += "&" + reviewFormReviewKey + "=" + body.value;
+
+    fetch(url, {
+        "mode": "no-cors"
+    })
+    .then(() => {
+        displayReviewSuccess();
+    })
+    .catch((err) => {
+        console.error(err);
+        displayReviewFailure();
+    })
+}
+
+
+function displayReviewSuccess()
+{
+    let sentText = document.getElementById("email-sent-text");
+    sentText.style.display = 'block';
+}
+
+function displayReviewFailure()
+{
+    
+    let sentText = document.getElementById("email-sent-text");
+    sentText.style.display = 'block';
+    sentText.innerHTML = '<em style="color: #ffdd50">Submitting review failed</em>'
 }
 
 function addReview(name, rating, review)

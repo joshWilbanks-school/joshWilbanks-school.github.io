@@ -3,19 +3,13 @@
     <head>
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Cutting Edge Kade - Home</title>
 
     </head>
     <body>
         <header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="services.html">Services</a>
-                <a href="reviews.html">Reviews</a>
-                <a href="contact.html">Contact</a>
-                
-            </nav>
+            <div data-include="components/header.html"></div>
 
         </header>
 <!-- 
@@ -63,22 +57,41 @@
                 </em>
             </p>
         </div>
+        <div id="map">
+            <iframe src="https://snazzymaps.com/embed/306589"> </iframe>
+            <div id="knockout-information">
+                <div>
+                    <h3>Knockout, A Hair Studio</h3>
+                    <p><strong>Come see us for a haircolor transformation or a haircut tailored just for you. You are going to be a knockout!</strong></p>
+                </div>
+                <div>
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Mon: Closed</li>
+                        <li>Tues: 9AM - 5PM</li>
+                        <li>Wed - Thurs: 7AM - 7PM </li>
+                        <li>Fri - Sat: 9AM - 5PM</li>
+                        <li>Additional hours upon request</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Address</h4>
+                    <a target="_blank" href="https://www.google.com/maps/place/Knockout,+a+hair+studio/@35.3683574,-80.6653629,16.5z/data=!4m5!3m4!1s0x88541ba5bcb605e3:0x883b1fd1476a8c43!8m2!3d35.3682405!4d-80.6650664">3775 Concord Pkwy S, Suite 104, Concord, NC 28027</a>
+                </div>
+                <div>
+                    <h4>Phone</h4>
+                    <a href="tel:9807810021" target="_self">(980) 781-0021</a>
+                </div>
+
+            </div>
+
+        </div>
 
         </main>
         <footer>
-            <ul>
-                <li>
-                    <a target="_blank" href="https://knockouthairstudio.com/about-us/"><img src="images/knockout.png" alt="Knockout Hair Salon"></a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.instagram.com/cutting_edge_kade/"><img src="images/insta.png" alt="Instagram"></a>
-                </li>
-                
-                <li>
-                    <a target="_blank" href="https://www.tiktok.com/@cutting_edge_kade"><img src="images/tiktok.png" alt="Tiktok"></a>
-                </li>
-            </ul>
+            <div data-include="components/footer.html"></div>
 
         </footer>
+        <script src="js/HTMLInclude.min.js"></script>
     </body>
 </html>

@@ -47,3 +47,93 @@ p {
     font-size: x-large;
     font-family: cursive;
 }
+
+/* Always set the map height explicitly to define the size of the div
+    * element that contains the map. */
+gmp-map {
+    height: 100%;
+}
+
+iframe {
+    width: 50%;
+    height: 500px;
+    max-width: 500px;
+    border: none;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.575);
+}
+
+#map {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1024px;
+    padding: 15px;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: var(--lighter);
+    box-sizing: border-box;
+}
+
+@media(max-width: 750px) {
+    #map {
+        flex-direction: column;
+        align-items: center;
+        width: max-content;
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+
+#knockout-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 500px;
+}
+
+#knockout-information h3 {
+    font-size: xx-large;
+    margin: 0;
+}
+
+#knockout-information h4 {
+    font-size: x-large;
+    margin: 0;
+}
+
+
+#knockout-information li {
+    font-size: large;
+    list-style: none;
+    margin: 0;
+    margin-left: 20px;
+}
+
+
+#knockout-information ul {
+    padding: 0;
+    margin: 0;
+}
+
+#knockout-information a {
+    margin-left: 15px;
+    font-size: large;
+}
+
+
+#knockout-information p {
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    font-size: large;
+    max-width: 500px;
+}
+
+#knockout-information div {
+    margin-bottom: 15px;
+}

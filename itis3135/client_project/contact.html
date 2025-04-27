@@ -3,6 +3,9 @@
     <head>
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/form.css">
+        <script src="js/contact.js" ></script>
+        <meta content="width=device-width" name="viewport" />
         <title>Cutting Edge Kade - Contact</title>
 
     </head>
@@ -20,15 +23,22 @@
         </header>
         <main>
             <h2>Contact me!</h2>
-            <form>
+            <form id="email-form" class="email-form-submitted">
                 <div id="form-header">
-                    <div id="subject-wrapper">
-                        <label>Subject:</label>
-                        <input type="text">
+                    <div id="inputs-wrapper">
+                        <div class="small-input" id="subject-wrapper">
+                            <label>Subject:</label>
+                            <input id="email-subject" type="text" required>
+                        </div>
+                        <div class="small-input" id="contact-wrapper">
+                            <label>Contact Information:</label>
+                            <input id="email-contact" type="text" required>
+                        </div>
                     </div>
                     <button>Send</button>
                 </div>
-                <textarea></textarea>
+                <p id="email-sent-text"><em>Email sent</em></p>
+                <textarea id="email-body" required></textarea>
             </form>
         </main>
         <footer>

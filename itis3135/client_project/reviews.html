@@ -3,8 +3,10 @@
     <head>
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/reviews.css">
+        <link rel="stylesheet" href="css/form.css">
         <script src="js/reviews.js" ></script>
         <title>Cutting Edge Kade - Reviews</title>
+        <meta content="width=device-width" name="viewport" />
 
     </head>
     <body>
@@ -21,6 +23,25 @@
         </header>
         <main>
             <h2>Reviews</h2>
+            <button id="review-toggle" onclick="togglePostReview()">Leave a Review</button>
+            <form id="form">
+                
+                <div id="form-header">
+                    <div id="inputs-wrapper">
+                        <div class="small-input" id="contact-wrapper">
+                            <label>Name: </label>
+                            <input placeholder="Your name here..." id="form-name" type="text" required>
+                        </div>
+                        <div class="small-input" id="contact-wrapper">
+                            <label>Rating (out of 5): </label>
+                            <input id="form-rating" value="5" step=".1" type="number" required max="5" min="0">
+                        </div>
+                    </div>
+                    <button>Submit</button>
+                </div>
+                <p id="email-sent-text"><em>Review sent</em></p>
+                <textarea id="form-body" required placeholder="Write your review here..."></textarea>
+            </form>
             <ul id="reviews"></ul>
             <template id="review-template">
             
