@@ -1,0 +1,31 @@
+#review ul {
+    text-align: left;
+}
+
+#good-things {
+    background-color: rgb(0, 255, 0);
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.807);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#bad-things {
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.589);
+    margin-bottom: 15px;
+}
+
+#general-takeaways {
+    
+    background-color: rgb(210, 203, 203);
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.996);
+    margin-bottom: 25px;
+}
