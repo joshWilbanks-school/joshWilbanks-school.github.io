@@ -12,18 +12,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
-function postToGoogleForm()
+//take the user input for the email form and send it to a google form (so no backend is necessary)
+function postEmailToGoogleForm()
 {
+    //get the form information
     let subject = document.getElementById("email-subject");
     let contact = document.getElementById("email-contact");
     let body = document.getElementById("email-body");
 
+    //construct the url for the POST request
     let url = formUrl + formSubjectKey + "=" + subject.value;
     url += "&" + formContactKey + "=" + contact.value;
     url += "&" + formBodyKey + "=" + body.value;
 
-
+    //make the request
     fetch(url, {
         "mode": "no-cors"
     })
@@ -38,13 +40,14 @@ function postToGoogleForm()
 
 function displaySuccess()
 {
+    //show the "Email sent" text
     let sentText = document.getElementById("email-sent-text");
     sentText.style.display = 'block';
 }
 
 function displayFailure()
 {
-    
+    //show the error message
     let sentText = document.getElementById("email-sent-text");
     sentText.style.display = 'block';
     sentText.innerHTML = '<em style="color: #ffdd50">Sending email failed</em>'

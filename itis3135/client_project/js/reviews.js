@@ -4,6 +4,7 @@ const reviewFormNameKey = "entry.1044291087";
 const reviewFormRatingKey = "entry.1766671734";
 const reviewFormReviewKey = "entry.793391861";
 
+//add listener to form submit
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("form").addEventListener("submit", (e) => {
         e.preventDefault();
@@ -12,8 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 })
 
+//load reviews from text file (pulled from various sources)
+//reviews DO NOT pull from google forms, so that displayed reviews can be hand picked
 async function loadAllReviews()
 {
+    //fetch all the reviews from file
     return fetch('reviews.txt')
     .then( (response) => {
         return response.text().then( (value) => {
@@ -32,6 +36,7 @@ async function loadAllReviews()
 
 let formVisible = false;
 
+//simple button toggle for displaying the "send review" form
 function togglePostReview() {
 
     let form = document.getElementById("form");
@@ -51,15 +56,20 @@ function togglePostReview() {
 
 }
 
+//get review from input and send to google form (so no need to have a backend)
 function postReviewToGoogleForm() {
+
+    //get the form data
     let name = document.getElementById("form-name");
     let rating = document.getElementById("form-rating");
     let body = document.getElementById("form-body");
 
+    //construct the request with the data
     let url = reviewFormUrl + reviewFormNameKey + "=" + name.value;
     url += "&" + reviewFormRatingKey + "=" + rating.value;
     url += "&" + reviewFormReviewKey + "=" + body.value;
 
+    //make the request
     fetch(url, {
         "mode": "no-cors"
     })
@@ -72,13 +82,14 @@ function postReviewToGoogleForm() {
     })
 }
 
-
+//display success text
 function displayReviewSuccess()
 {
     let sentText = document.getElementById("email-sent-text");
     sentText.style.display = 'block';
 }
 
+//display failure text
 function displayReviewFailure()
 {
     
@@ -119,7 +130,7 @@ function addReview(name, rating, review)
     document.getElementById('reviews').appendChild(template);
 }
 
-
+//load all reviews on page load
 document.addEventListener('DOMContentLoaded', () => {
     loadAllReviews().then( (reviews) => {
         for (let i = 0; i < reviews.length; i++)

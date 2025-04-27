@@ -1,4 +1,5 @@
 
+//load all images from file
 const imageCount = 10;
 function loadAllImages()
 {
@@ -10,7 +11,7 @@ function loadAllImages()
     return images;
 }
 
-
+//add an image to the page
 function addImage(imgPath)
 {
     let gallery = document.getElementById('gallery');
@@ -21,6 +22,7 @@ function addImage(imgPath)
     gallery.appendChild(li);
 }
 
+//load all images on page init
 document.addEventListener('DOMContentLoaded', () => {
     let images = loadAllImages();
     images.forEach((image) => {
