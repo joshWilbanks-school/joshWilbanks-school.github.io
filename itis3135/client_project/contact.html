@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="css/form.css">
         <script src="js/contact.js" ></script>
+        <script src="js/validation.js"></script>
         <meta content="width=device-width" name="viewport" />
         <title>Cutting Edge Kade - Contact</title>
 
@@ -15,22 +16,23 @@
 
         </header>
         <main>
-            <h2>Contact me!</h2>
+            <h1>Contact me!</h1>
             <form id="email-form" class="email-form-submitted">
                 <div id="form-header">
                     <div id="inputs-wrapper">
                         <div class="small-input" id="subject-wrapper">
-                            <label>Subject:</label>
+                            <label for="email-subject">Subject:</label>
                             <input id="email-subject" type="text" required>
                         </div>
                         <div class="small-input" id="contact-wrapper">
-                            <label>Contact Information:</label>
+                            <label for="email-contact">Contact Information:</label>
                             <input id="email-contact" type="text" required>
                         </div>
                     </div>
                     <button>Send</button>
                 </div>
                 <p id="email-sent-text"><em>Email sent</em></p>
+                <label for="email-body">Email</label>
                 <textarea id="email-body" required></textarea>
             </form>
         </main>

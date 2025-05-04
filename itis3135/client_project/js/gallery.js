@@ -12,12 +12,13 @@ function loadAllImages()
 }
 
 //add an image to the page
-function addImage(imgPath)
+function addImage(imgPath, id)
 {
     let gallery = document.getElementById('gallery');
     let li = document.createElement('li');
     let img = document.createElement('img');
     img.setAttribute('src', imgPath);
+    img.setAttribute('alt', "Gallery image " + id);
     li.appendChild(img);
     gallery.appendChild(li);
 }
@@ -25,7 +26,9 @@ function addImage(imgPath)
 //load all images on page init
 document.addEventListener('DOMContentLoaded', () => {
     let images = loadAllImages();
+    let id = 1;
     images.forEach((image) => {
-        addImage(image);
+        addImage(image, id);
+        id++;
     })
 })

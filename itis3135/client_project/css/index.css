@@ -96,8 +96,13 @@ iframe {
     max-width: 500px;
 }
 
-#knockout-information h3 {
+#knockout-information h2 {
     font-size: xx-large;
+    margin: 0;
+}
+
+#knockout-information h3 {
+    font-size: x-large;
     margin: 0;
 }
 

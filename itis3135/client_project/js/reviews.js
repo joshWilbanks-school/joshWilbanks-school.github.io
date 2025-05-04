@@ -104,7 +104,7 @@ function addReview(name, rating, review)
     let template = document.getElementById('review-template').content.cloneNode(true);
     let stars = template.querySelectorAll('img');
     let review_text = template.querySelector('p');
-    let name_text = template.querySelector('h3');
+    let name_text = template.querySelector('h2');
 
 
     //all the stars are initially full
